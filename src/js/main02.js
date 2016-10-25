@@ -1,8 +1,9 @@
+<script>
+    
+    var scrollAnimatorEntertain = function() {
 
-var scrollAnimatorEntertain = function() {
-
-    var hT = jQuery('#entertain2').offset().top,  //topPos is the number of pixels from the top of the closest relatively positioned parent element.
-        hH = jQuery('#entertain2').outerHeight(), // Get the current computed height for the first element in the set of matched elements
+    var hT = jQuery('#entertainstart').offset().top,  //topPos is the number of pixels from the top of the closest relatively positioned parent element.
+        hH = jQuery('#entertainstart').outerHeight(), // Get the current computed height for the first element in the set of matched elements
         wH = jQuery(window).height(),      //Get the current computed height for the first element in the set of matched elements or set the height of every matched element.
         wS = jQuery(this).scrollTop();    // Get the current vertical position of the scroll bar for the first element in the set of matched elements
 
@@ -105,8 +106,8 @@ jQuery(window).scroll(scrollAnimatorEntertain);
 
 var scrollAnimatorEarn = function() {
 
-    var hT = jQuery('#earn').offset().top,
-        hH = jQuery('#earn').outerHeight(),
+    var hT = jQuery('#destinationStart').offset().top,
+        hH = jQuery('#destinationStart').outerHeight(),
         wH = jQuery(window).height(),
         wS = jQuery(this).scrollTop();
     if (wS > (hT+hH-wH )){
@@ -195,16 +196,10 @@ var scrollAnimatorEarn = function() {
 jQuery(window).scroll(scrollAnimatorEarn);
 
 
-
-
-
-
-
-
 var scrollAnimatorSell = function() {
 
-    var hT = jQuery('#basket').offset().top,
-        hH = jQuery('#basket').outerHeight(),
+    var hT = jQuery('#basketStart').offset().top,
+        hH = jQuery('#basketStart').outerHeight(),
         wH = jQuery(window).height(),
         wS = jQuery(this).scrollTop();
     if (wS > (hT+hH-wH )){
@@ -299,8 +294,8 @@ jQuery(window).scroll(scrollAnimatorSell);
 
 var scrollAnimatorManage = function() {
 
-    var hT = jQuery('#settings').offset().top,
-        hH = jQuery('#settings').outerHeight(),
+    var hT = jQuery('#settingsStart').offset().top,
+        hH = jQuery('#settingsStart').outerHeight(),
         wH = jQuery(window).height(),
         wS = jQuery(this).scrollTop();
     if (wS > (hT+hH-wH )){
@@ -386,3 +381,6 @@ var scrollAnimatorManage = function() {
 };
 
 jQuery(window).scroll(scrollAnimatorManage);
+
+</script>
+
